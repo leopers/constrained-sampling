@@ -22,19 +22,21 @@ An additional experiment explores a square support region, including the formula
 
 A theoretical extension investigates how the paper’s formulation \((P_I)\) relates to the regularized learning problem
 
-\[
-\min*{\mu}
-\frac{1}{N}\sum*{n=1}^{N}
-\ell\!\left(
-y*n,\,
-\mathbb{E}*{\theta\sim\mu}
+$$
+\min_{\mu}
+\frac{1}{N}\sum_{n=1}^{N}
+\ell\left(
+y_n,\,
+\mathbb{E}_{\theta\sim\mu}
 [\Phi(\theta,x_n)]
 \right)
++
+\gamma\,\mathrm{KL}(\mu\|\pi).
+$$
 
-- \gamma\,\mathrm{KL}(\mu\|\pi),
-  \]
-
-where \(\mu\) is a distribution over parameters, \(\pi\) is a reference distribution, \(\Phi\) defines the model’s features or predictions, and \(\ell\) is a loss function.
+where $\mu$ is a distribution over parameters, $\pi$ is a reference
+distribution, $\Phi$ defines the model’s features or predictions,
+$\ell$ is a loss function.
 
 This extension also explores the connection between optimization over parameter distributions and training an infinite-width neural network.
 
