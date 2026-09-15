@@ -20,7 +20,7 @@ An additional experiment explores a square support region, including the formula
 
 ### Learning over Probability Distributions
 
-A theoretical extension investigates how the paper’s formulation \((P_I)\) relates to the regularized learning problem
+A theoretical extension investigates how the paper’s formulation $(P_I)$ relates to the regularized learning problem
 
 $$
 \min_{\mu}
