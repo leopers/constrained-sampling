@@ -35,7 +35,7 @@ def pdlmc_chain(x0, lam0, eta, potential_f, constraint_g, n_steps):
     return torch.stack(x_chain), torch.stack(lam_chain)
 
 
-# Here the rejection sampling was was implemented just for the normalized gaussian, for the sake of simplicity
+# Here the rejection sampling was implemented just for the normalized gaussian, for the sake of simplicity
 def rejection_sampling(num_samples, center, constraint_r, batch_size=100000):
     accepted = []
     n_accepted = 0

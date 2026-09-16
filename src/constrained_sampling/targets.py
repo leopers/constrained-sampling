@@ -10,4 +10,4 @@ def constraint_r(x, a, b):
 
 
 def constraint_g(x, epsilon=1e-3):
-    return torch.relu(constraint_r(x, a=0.5, b=2.0) - 1.0) - epsilon
+    return torch.relu(constraint_r(x, a=0.5, b=2) - 1.0) - epsilon
