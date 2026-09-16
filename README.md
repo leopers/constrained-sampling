@@ -12,33 +12,11 @@ The main experiment adapts the two-dimensional Gaussian sampling example from Fi
 
 The authors’ JAX implementation serves as a reference but this project implements the algorithm in PyTorch.
 
-## Extensions
+## Extension
 
 ### Square Support
 
 An additional experiment explores a square support region, including the formulation of suitable constraints and an analysis of the resulting samples.
-
-### Learning over Probability Distributions
-
-A theoretical extension investigates how the paper’s formulation $(P_I)$ relates to the regularized learning problem
-
-$$
-\min_{\mu}
-\frac{1}{N}\sum_{n=1}^{N}
-\ell\left(
-y_n,\,
-\mathbb{E}_{\theta\sim\mu}
-[\Phi(\theta,x_n)]
-\right)
-+
-\gamma\,\mathrm{KL}(\mu\|\pi).
-$$
-
-where $\mu$ is a distribution over parameters, $\pi$ is a reference
-distribution, $\Phi$ defines the model’s features or predictions,
-$\ell$ is a loss function.
-
-This extension also explores the connection between optimization over parameter distributions and training an infinite-width neural network.
 
 ## References
 
